@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="362.0" prefWidth="574.0" stylesheets="@Conexion_Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.gestionetudiant.EditNoteController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b2e39" height="362.0" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="202.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4832214765100671">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Rectangle>
+      <Label fx:id="id_label" layoutX="24.0" layoutY="12.0" text="id Etudiant:" textFill="#f8f5f5">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenom_label" layoutX="24.0" layoutY="211.0" text="Prenom:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nom_label" layoutX="24.0" layoutY="155.0" text="Nom   :" textFill="#fffdfd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="381.0" layoutY="307.0" mnemonicParsing="false" onAction="#Edit_note" prefHeight="51.0" prefWidth="186.0" stylesheets="@Conexion_Style.css" text="Modifier" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+         <styleClass>
+            <String fx:value="se_connecter" />
+            <String fx:value="principale_color_background" />
+         </styleClass>
+      </Button>
+      <Label layoutX="212.0" layoutY="62.0" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="20.0" text="Note" textFill="#727272">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon glyphName="EDIT" layoutX="326.0" layoutY="119.0" size="5.5em" styleClass="pointer" wrappingWidth="62.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.43421053886413574" green="0.2972465753555298" blue="0.2874634563922882" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.43421053886413574" green="0.2972465753555298" blue="0.2874634563922882" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.47315436241610737">
+                     <color>
+                        <Color red="0.95686274766922" green="0.26274511218070984" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.95686274766922" green="0.26274511218070984" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </FontAwesomeIcon>
+      <Label fx:id="nom_label1" layoutX="247.0" layoutY="116.0" text="Le Cours:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Cours_Cbox" layoutX="286.0" layoutY="151.0" prefHeight="37.0" prefWidth="250.0" promptText="selectioner le cours" styleClass="se_connecter" />
+      <Label fx:id="nom_label11" layoutX="247.0" layoutY="188.0" text="La note:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="note_field" layoutX="286.0" layoutY="220.0" prefHeight="37.0" prefWidth="250.0" promptText="la note" styleClass="textField">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" prefHeight="535.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.gestionetudiant.TableNotesContreller">
+    <children>
+        <TableView fx:id="notetable" layoutX="10.0" layoutY="66.0" prefHeight="460.0" prefWidth="840.0" styleClass="table" stylesheets="@Conexion_Style.css">
+            <columns>
+                <TableColumn fx:id="etudiant_id" prefWidth="89.0" text="etudiant id" />
+                <TableColumn fx:id="nom_etudiant" minWidth="0.0" prefWidth="155.0" text="nom d'etudiant" />
+                <TableColumn fx:id="prenom_etudiant" minWidth="0.0" prefWidth="226.0" text="prenom d'etudiant" />
+                <TableColumn fx:id="cours" minWidth="0.0" prefWidth="171.0" text="cours" />
+                <TableColumn fx:id="noteid" minWidth="0.0" prefWidth="71.0" text="note id" />
+            <TableColumn fx:id="note" minWidth="0.0" prefWidth="124.0" text="note" />
+            </columns>
+        </TableView>
+      <Button layoutX="142.0" layoutY="13.0" mnemonicParsing="false" onAction="#Modifier_Note" prefHeight="44.0" prefWidth="134.0" stylesheets="@Conexion_Style.css" text="remplir les notes" textFill="WHITE">
+         <styleClass>
+            <String fx:value="principale_color_background" />
+            <String fx:value="pointer" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="FILE" size="1.4em" wrappingWidth="14.714284896850586" />
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="287.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#refresh_table" stylesheets="@Conexion_Style.css">
+         <styleClass>
+            <String fx:value="trans_back" />
+            <String fx:value="amethyst" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon glyphName="REFRESH" onMouseClicked="#refresh_table" size="3em" styleClass="pointer" text="" wrappingWidth="40.0" />
+         </graphic>
+      </Button>
+      <Button layoutX="556.0" layoutY="16.0" mnemonicParsing="false" onAction="#Delete_note" prefHeight="38.0" prefWidth="134.0" stylesheets="@Conexion_Style.css" text="Suprimer" textFill="#f2f2f2">
+         <styleClass>
+            <String fx:value="danger" />
+            <String fx:value="pointer" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon fill="#f2f2f2" glyphName="TRASH" size="1.3em" />
+         </graphic>
+      </Button>
+      <Button layoutX="709.0" layoutY="16.0" mnemonicParsing="false" onAction="#Modifier_note" prefHeight="38.0" prefWidth="134.0" stylesheets="@Conexion_Style.css" text="Modifier" textFill="#fffdfd">
+         <styleClass>
+            <String fx:value="belize-hole" />
+            <String fx:value="pointer" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="EDIT" size="1.2em" text="" />
+         </graphic>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="40.0" layoutX="2.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../student.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="27.0" layoutY="11.0" prefHeight="19.0" prefWidth="134.0" text="gestion Notes" textFill="#292c36">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="398.0" layoutY="16.0" mnemonicParsing="false" onAction="#ExportExel" prefHeight="38.0" prefWidth="134.0" stylesheets="@Conexion_Style.css" text="Exporter EXEL">
+         <styleClass>
+            <String fx:value="success" />
+            <String fx:value="pointer" />
+            <String fx:value="bold_white" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="FILE" size="1.2em" />
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

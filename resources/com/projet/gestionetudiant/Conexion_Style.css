@@ -1,0 +1,267 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/*
+    Created on : Apr 19, 2024, 11:18:07 PM
+    Author     : admin
+*/
+
+.right-form{
+    -fx-background-color: #fff;
+}
+
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+
+}
+.close:hover{
+    -fx-background-color: #ff3547;
+}
+
+
+.textField{
+    -fx-background-color: linear-gradient(to bottom ,#efefef,#eee);
+    -fx-border-radius: 4px;
+    -fx-border-color: #444;
+    -fx-border-width: 1px;
+    -fx-font-fmily:"Arial";
+}
+
+.textField:focused{
+    -fx-background-color: #fff;
+    -fx-border-width: .8px;
+}
+
+.se_connecter{
+    -fx-background-color: #9cccfd;
+    -fx-cursor:hand;
+    
+}
+.se_connercter:hover{
+    -fx-background-color: #73b9ff;
+}
+.se_souvenir,.face,.google:hover{
+    -fx-cursor:hand;
+
+}
+.pointer{
+-fx-cursor:hand;
+}
+/* Success */
+.success {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-weight: bold; /* Bold text */
+}
+
+/* Warning */
+.warning {
+    -fx-background-color: #FFC107; /* Yellow */
+    -fx-text-fill: black; /* Black text color */
+    -fx-font-weight: bold; /* Bold text */
+}
+
+/* Danger */
+.danger {
+    -fx-background-color: #F44336; /* Red */
+
+}
+
+
+/* Primary */
+.primary {
+    -fx-background-color: #2196F3; /* Blue */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-weight: bold; /* Bold text */
+}
+
+/* Secondary */
+.secondary {
+    -fx-background-color: #9E9E9E; /* Grey */
+    -fx-text-fill: black; /* Black text color */
+    -fx-font-weight: bold; /* Bold text */
+}
+
+/* Additional Color Options */
+/* Turquoise */
+.turquoise {
+    -fx-background-color: #1ABC9C;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; /* Bold text */
+}
+
+/* Emerald */
+.emerald {
+    -fx-background-color: #2ECC71; /* Bold text */
+}
+
+/* Peter River */
+.peter-river {
+    -fx-background-color: #3498DB;
+}
+.text_white{
+ -fx-text-fill: white;
+  -fx-font-weight: bold; /* Bold text */
+}
+.Cours_Cbox{
+  -fx-prompt-text-fill: white;
+}
+/* Amethyst */
+.amethyst {
+    -fx-background-color: #9B59B6;
+}
+
+/* Wet Asphalt */
+.wet-asphalt {
+    -fx-background-color: #34495E;
+}
+
+.btn-hover-home:hover{
+-fx-background-color:#43454d;
+}
+
+/* Nephritis */
+.nephritis {
+    -fx-background-color: #27AE60;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; /* Bold text */
+}
+
+/* Belize Hole */
+.belize-hole {
+    -fx-background-color: #2980B9;
+
+}
+
+/* Wisteria */
+.wisteria {
+    -fx-background-color: #8E44AD;
+}
+
+/* Midnight Blue */
+.midnight-blue {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold; /* Bold text */
+}
+
+/* You can continue adding more color options as needed */
+
+.trans_back{
+-fx-background-color:transparent;
+}
+
+
+/* Table styling */
+.table {
+    -fx-background-color: #292c36;
+    -fx-padding: 4px; /* Adjust padding as needed */
+
+}
+
+/* Horizontal rule (separator between rows) */
+.table .hr {
+    -fx-border-width: 1px 0 0 0; /* Border width: top only */
+    -fx-border-color: #FFFFFF; /* Color of the horizontal rule */
+    -fx-padding: 5px 0; /* Adjust padding as needed */
+}
+
+/* Table header */
+.table .column-header {
+    -fx-font-weight: bold; /* Bold text for column headers */
+    -fx-text-fill: white; /* White text color for column headers */
+}
+
+/* Table row hover effect */
+.table-row-cell:hover {
+    -fx-background-color: #9cccfd; /* Darker background color on hover */
+}
+
+/* Table cell padding */
+.table-cell {
+    -fx-padding: 5px; /* Adjust cell padding as needed */
+}
+
+/* Table cell text color */
+.table-cell .text {
+    -fx-text-fill: white; /* White text color for cell text */
+}
+
+/* Table cell selected state */
+.table-row-cell:selected .table-cell {
+    -fx-background-color: #666666; /* Background color of selected cells */
+}
+
+
+
+/* Success */
+.success {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-weight: bold; /* Bold text */
+}
+
+/* Warning */
+.warning {
+    -fx-background-color: #FFC107; /* Yellow */
+    -fx-text-fill: black; /* Black text color */
+    -fx-font-weight: bold; /* Bold text */
+}
+
+/* Danger */
+.danger {
+    -fx-background-color: #F44336; /* Red */
+
+
+}
+/* Danger */
+.tdanger {
+    -fx-text-fill: #F44336;
+
+}
+.twarning {
+    -fx-text-fill: #FFC107; /* Yellow */
+}
+/* Additional Color Options */
+/* Turquoise */
+.tturquoise {
+    -fx-text-fill: #1ABC9C ;
+}
+
+/* Emerald */
+.temerald {
+    -fx-text-fill: #2ECC71; /* Bold text */
+}
+
+
+/* Midnight Blue */
+.tmidnight-blue {
+ ;
+    -fx-text-fill:#2C3E50 ;
+}
+
+
+
+.right-panel{
+  -fx-border-radius:10px;
+}
+
+
+.success-message{
+-fx-background-color:#d4edda;
+-fx-text-fill:#155724;
+-fx-alignment:center;
+}
+
+
+
+.bold_white{
+  -fx-text-fill: white;
+  -fx-font-weight: bold; /* Bold text */}
+
+
+  .principale_color_background{
+  -fx-background-color:#2b2e39;
+  }

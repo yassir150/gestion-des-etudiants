@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainframe" prefHeight="535.0" prefWidth="864.0" style="-fx-background-color: #f8f9fc; -fx-text-fill: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="50.0" layoutY="29.0" prefHeight="84.0" prefWidth="648.0" stylesheets="@Conexion_Style.css" text="Pour une perfect management">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="trans_back" />
+            <String fx:value="tdanger" />
+         </styleClass>
+      </TextField>
+      <FontAwesomeIcon glyphName="QUOTE_LEFT" layoutX="41.0" layoutY="56.0" size="1.7em" />
+      <FontAwesomeIcon glyphName="QUOTE_LEFT" layoutX="664.0" layoutY="56.0" size="1.7em" />
+      <FontAwesomeIcon fill="#a3c3cf" glyphName="PIE_CHART" layoutX="50.0" layoutY="416.0" size="24em" />
+      <TextField layoutX="214.0" layoutY="215.0" prefHeight="25.0" prefWidth="42.0" stylesheets="@Conexion_Style.css" text="25%">
+         <styleClass>
+            <String fx:value="danger" />
+            <String fx:value="text_white" />
+         </styleClass>
+      </TextField>
+      <TextField layoutX="79.0" layoutY="301.0" prefHeight="25.0" prefWidth="42.0" stylesheets="@Conexion_Style.css" text="65%">
+         <styleClass>
+            <String fx:value="amethyst" />
+            <String fx:value="text_white" />
+         </styleClass>
+      </TextField>
+      <TextField layoutX="235.0" layoutY="314.0" prefHeight="25.0" prefWidth="42.0" stylesheets="@Conexion_Style.css" text="12%">
+         <styleClass>
+            <String fx:value="belize-hole" />
+            <String fx:value="text_white" />
+         </styleClass>
+      </TextField>
+      <TextField layoutX="60.0" layoutY="346.0" styleClass="trans_back" stylesheets="@Conexion_Style.css" text="Notes Superieur á 10">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="201.0" layoutY="253.0" styleClass="trans_back" stylesheets="@Conexion_Style.css" text="Notes &lt; 10">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="235.0" layoutY="331.0" styleClass="trans_back" stylesheets="@Conexion_Style.css" text="Notes &gt; 18">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIcon fill="#2c7282" glyphName="BAR_CHART" layoutX="420.0" layoutY="416.0" size="24em" />
+      <TextField layoutX="482.0" layoutY="271.0" prefHeight="25.0" prefWidth="42.0" stylesheets="@Conexion_Style.css" text="45%">
+         <styleClass>
+            <String fx:value="peter-river" />
+            <String fx:value="text_white" />
+         </styleClass>
+      </TextField>
+      <TextField layoutX="543.0" layoutY="203.0" prefHeight="25.0" prefWidth="42.0" stylesheets="@Conexion_Style.css" text="75%">
+         <styleClass>
+            <String fx:value="peter-river" />
+            <String fx:value="text_white" />
+         </styleClass>
+      </TextField>
+      <TextField layoutX="606.0" layoutY="228.0" prefHeight="25.0" prefWidth="42.0" stylesheets="@Conexion_Style.css" text="64%">
+         <styleClass>
+            <String fx:value="peter-river" />
+            <String fx:value="text_white" />
+         </styleClass>
+      </TextField>
+      <TextField layoutX="671.0" layoutY="172.0" prefHeight="25.0" prefWidth="42.0" stylesheets="@Conexion_Style.css" text="90%">
+         <styleClass>
+            <String fx:value="peter-river" />
+            <String fx:value="text_white" />
+         </styleClass>
+      </TextField>
+      <TextField layoutX="351.0" layoutY="154.0" styleClass="trans_back" stylesheets="@Conexion_Style.css" text="la reussité % ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="749.0" layoutY="412.0" styleClass="trans_back" stylesheets="@Conexion_Style.css" text="les Cours">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="535.0" layoutY="391.0" prefHeight="30.0" prefWidth="47.0" stylesheets="@Conexion_Style.css" text="PHP">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="trans_back" />
+            <String fx:value="tturquoise" />
+         </styleClass>
+      </TextField>
+      <TextField layoutX="599.0" layoutY="391.0" prefHeight="30.0" prefWidth="52.0" stylesheets="@Conexion_Style.css" text="JAVA">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="trans_back" />
+            <String fx:value="twarning" />
+         </styleClass>
+      </TextField>
+      <TextField layoutX="664.0" layoutY="391.0" prefHeight="30.0" prefWidth="56.0" stylesheets="@Conexion_Style.css" text="HTML">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="trans_back" />
+            <String fx:value="temerald" />
+         </styleClass>
+      </TextField>
+      <TextField layoutX="472.0" layoutY="391.0" prefHeight="30.0" prefWidth="57.0" stylesheets="@Conexion_Style.css" text="MATH">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="trans_back" />
+            <String fx:value="tdanger" />
+         </styleClass>
+      </TextField>
+   </children>
+</AnchorPane>

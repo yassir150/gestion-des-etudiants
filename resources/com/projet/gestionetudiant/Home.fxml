@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.ExpansionPanel.CollapsedPanel?>-->
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.gestionetudiant.HomeController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane prefHeight="43.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="date" layoutX="984.0" layoutY="9.0" text="19/05/2024" textFill="#292c36">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="74.0" fitWidth="212.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/3-1000x280.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="557.0" prefWidth="236.0" style="-fx-background-color: #292c36;" BorderPane.alignment="CENTER">
+               <children>
+                  <Circle fill="#dddddd" layoutX="32.0" layoutY="58.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+                  <FontAwesomeIcon fill="#fffdfd" glyphName="USER" layoutX="23.0" layoutY="66.0" size="2em" />
+                  <Label alignment="CENTER" layoutX="50.0" layoutY="43.0" prefHeight="21.0" prefWidth="22.0" text="\@" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name_label" alignment="BOTTOM_LEFT" layoutX="72.0" layoutY="44.0" prefHeight="28.0" prefWidth="160.0" text="Administrateur" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Line endX="123.0" layoutX="107.0" layoutY="135.0" startX="-100.0" stroke="WHITE" />
+                  <Button fx:id="EtudiantBtn" alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutY="176.0" mnemonicParsing="false" onAction="#Display_Etudiant" prefHeight="46.0" prefWidth="236.0" style="-fx-text-fill: white;" stylesheets="@Conexion_Style.css" text="Gestion etudiants">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="trans_back" />
+                        <String fx:value="pointer" />
+                        <String fx:value="btn-hover-home" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="CoursBtn" alignment="BASELINE_LEFT" layoutY="224.0" mnemonicParsing="false" onAction="#Display_Cours" prefHeight="46.0" prefWidth="236.0" stylesheets="@Conexion_Style.css" text="Gestion cours" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="trans_back" />
+                        <String fx:value="pointer" />
+                        <String fx:value="btn-hover-home" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="AbsenceBtn" alignment="BASELINE_LEFT" layoutY="275.0" mnemonicParsing="false" onAction="#Display_absence" prefHeight="46.0" prefWidth="236.0" stylesheets="@Conexion_Style.css" text="Gestion absences" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="pointer" />
+                        <String fx:value="trans_back" />
+                        <String fx:value="btn-hover-home" />
+                     </styleClass>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="498.0" mnemonicParsing="false" onAction="#logout" styleClass="se_connecter" stylesheets="@Conexion_Style.css" text="Se déconnecter">
+                     <graphic>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="SIGN_OUT" size="1.4em" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="NoteBtn" alignment="BASELINE_LEFT" layoutY="325.0" mnemonicParsing="false" onAction="#Display_notes" prefHeight="46.0" prefWidth="236.0" stylesheets="@Conexion_Style.css" text="Gestion notes" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="trans_back" />
+                        <String fx:value="pointer" />
+                        <String fx:value="btn-hover-home" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="editProfileBtn" layoutX="50.0" layoutY="69.0" mnemonicParsing="false" onAction="#Edit_profile" stylesheets="@Conexion_Style.css" text="Edit Profile" textFill="#e4e4e4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="trans_back" />
+                        <String fx:value="tturquoise" />
+                        <String fx:value="pointer" />
+                     </styleClass>
+                  </Button>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="4.0" layoutY="220.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="236.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="4.0" layoutY="271.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="236.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="4.0" layoutY="321.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="236.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="4.0" layoutY="369.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="236.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="4.0" layoutY="172.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="236.0" />
+                  <Button layoutX="50.0" layoutY="92.0" mnemonicParsing="false" onAction="#Change_profile" prefHeight="16.0" prefWidth="125.0" stylesheets="@Conexion_Style.css" text="Changer Account" textFill="#e4e4e4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="trans_back" />
+                        <String fx:value="tturquoise" />
+                        <String fx:value="pointer" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="EnseignantBtn" alignment="BASELINE_LEFT" layoutY="373.0" mnemonicParsing="false" onAction="#Display_Enseignants" prefHeight="46.0" prefWidth="236.0" stylesheets="@Conexion_Style.css" text="Gestion Enseignants" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="trans_back" />
+                        <String fx:value="pointer" />
+                        <String fx:value="btn-hover-home" />
+                     </styleClass>
+                  </Button>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="4.0" layoutY="417.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="236.0" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane onDragDetected="#Display_Enseignants" prefHeight="535.0" prefWidth="864.0" styleClass="prima" stylesheets="@Conexion_Style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane fx:id="main" layoutX="10.0" layoutY="11.0" />
+<!--                  <ExpansionPanel.CollapsedPanel layoutX="-68.0" layoutY="66.0" prefWidth="252">-->
+<!--                      <titleNodes>-->
+<!--                          <Label text="TripName" />-->
+<!--                      </titleNodes>-->
+<!--                  </ExpansionPanel.CollapsedPanel>-->
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

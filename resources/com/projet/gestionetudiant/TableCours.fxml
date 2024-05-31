@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="535.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.gestionetudiant.TableCoursController">
+    <children>
+        <TableView fx:id="CoursTable" layoutX="12.0" layoutY="67.0" prefHeight="460.0" prefWidth="840.0" styleClass="table" stylesheets="@Conexion_Style.css">
+            <columns>
+                <TableColumn fx:id="cours_id" maxWidth="125.60000610351562" minWidth="0.0" prefWidth="119.20001220703125" resizable="false" text="cours id" />
+                <TableColumn fx:id="nom_cours" prefWidth="198.4000244140625" text="nom des cours" />
+                <TableColumn fx:id="description_cours" prefWidth="283.0" text="description" />
+            <TableColumn fx:id="enseignant_cours" prefWidth="229.0" text="enseignants" />
+            </columns>
+        </TableView>
+        <Button layoutX="724.0" layoutY="10.0" mnemonicParsing="false" onAction="#ADD_cours" prefHeight="38.0" prefWidth="126.0" stylesheets="@Conexion_Style.css" text="Ajouter cours">
+         <styleClass>
+            <String fx:value="emerald" />
+            <String fx:value="pointer" />
+            <String fx:value="bold_white" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="USER_PLUS" size="1.2em" />
+         </graphic></Button>
+        <Button layoutX="584.0" layoutY="10.0" mnemonicParsing="false" onAction="#EditCours" prefHeight="38.0" prefWidth="126.0" stylesheets="@Conexion_Style.css" text="Edit cours">
+         <styleClass>
+            <String fx:value="belize-hole" />
+            <String fx:value="pointer" />
+            <String fx:value="bold_white" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="EDIT" size="1.2em" />
+         </graphic></Button>
+        <Button layoutX="446.0" layoutY="10.0" mnemonicParsing="false" onAction="#DeleteCours" prefHeight="38.0" prefWidth="126.0" stylesheets="@Conexion_Style.css" text="Delete cours">
+         <styleClass>
+            <String fx:value="danger" />
+            <String fx:value="pointer" />
+            <String fx:value="bold_white" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="TRASH" size="1.2em" />
+         </graphic></Button>
+      <Button layoutX="219.0" layoutY="9.0" mnemonicParsing="false" stylesheets="@Conexion_Style.css">
+         <styleClass>
+            <String fx:value="trans_back" />
+            <String fx:value="amethyst" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon glyphName="REFRESH" onMouseClicked="#refresh_cours" size="3em" styleClass="pointer" text="" wrappingWidth="40.0" />
+         </graphic>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="40.0" layoutX="2.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../student.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="27.0" layoutY="12.0" prefHeight="19.0" prefWidth="134.0" text="gestion cours" textFill="#292c36">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="298.0" layoutY="10.0" mnemonicParsing="false" onAction="#ExportExel" prefHeight="38.0" prefWidth="134.0" stylesheets="@Conexion_Style.css" text="Exporter EXEL">
+         <styleClass>
+            <String fx:value="success" />
+            <String fx:value="pointer" />
+            <String fx:value="bold_white" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="FILE" size="1.2em" />
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" prefHeight="535.0" prefWidth="864.0" stylesheets="@Conexion_Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.gestionetudiant.AffectationNoteTableContrller">
+    <children>
+        <TableView fx:id="etudiantTable" layoutX="12.0" layoutY="68.0" prefHeight="460.0" prefWidth="840.0" styleClass="table">
+            <columns>
+                <TableColumn fx:id="etudiant_id" maxWidth="100.0" minWidth="0.0" resizable="false" text="etudiant id" />
+                <TableColumn fx:id="nom" prefWidth="110.0" text="nom" />
+                <TableColumn fx:id="prenom" prefWidth="110.0" text="prenom" />
+                <TableColumn fx:id="telephone" prefWidth="140.0" text="telephone" />
+                <TableColumn fx:id="email" prefWidth="165.0" text="email" />
+                <TableColumn fx:id="adresse" prefWidth="256.79998779296875" text="adresse" />
+            </columns>
+        </TableView>
+      <Button layoutX="52.0" layoutY="14.0" mnemonicParsing="false" onAction="#refresh_table" stylesheets="@Conexion_Style.css">
+         <styleClass>
+            <String fx:value="trans_back" />
+            <String fx:value="pointer" />
+         </styleClass>
+         <graphic>
+            <FontAwesomeIcon glyphName="REFRESH" onMouseClicked="#refresh_table" size="3em" styleClass="pointer" wrappingWidth="40.0" />
+         </graphic>
+      </Button>
+      <Button layoutX="729.0" layoutY="18.0" mnemonicParsing="false" onAction="#ADD_note" prefHeight="36.0" prefWidth="121.0" text="Ajouter" textFill="#f8f8f8">
+         <graphic>
+            <FontAwesomeIcon fill="#fffefe" glyphName="PLUS" size="1.3em" />
+         </graphic>
+         <styleClass>
+            <String fx:value="danger" />
+            <String fx:value="pointer" />
+         </styleClass>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button alignment="BASELINE_LEFT" layoutX="551.0" layoutY="18.0" mnemonicParsing="false" onAction="#fichier_notes" prefHeight="36.0" prefWidth="121.0" style="-fx-background-color: #292c36;" styleClass="pointer" stylesheets="@Conexion_Style.css" text="Fichier de notes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="FILE" size="1.1em" strokeType="OUTSIDE" />
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>
